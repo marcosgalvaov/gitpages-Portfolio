@@ -1,0 +1,392 @@
+
+main {
+    font-family: Alata;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #539DDE, #F1F8FF, #539DDE);
+}
+
+.bbh-bartle-regular {
+  font-family: "BBH Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* HEADER */
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(34, 117, 192, 1);
+    margin: 1% 20%;
+    padding: 0.5%;
+    border-radius: 30px;
+}
+
+.cabecalho h1 {
+    font-family: BBH Bartle;
+    color: rgba(152, 236, 161, 1);
+}
+
+.dropdown {
+    margin-right: 5%;
+}
+
+.dropdown button {
+    background-color: rgba(34, 117, 192, 1);
+    border-color: white;
+}
+
+.dropdown button:hover {
+    background-color: #4f285b;
+}
+
+ul a:hover {
+    background-color: #b983c8;
+}
+
+
+/* BANNER INICIAL*/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0;
+    background-image: linear-gradient(to bottom, #025DAE, #4E8AD7, #9BB7FF);
+    border: solid 5px;
+    border-color: #9BB7FF;
+    border-radius: 30px;
+    margin: 1% 8%;
+    padding: 2%;
+    text-align: center;
+
+}
+
+.banner img {
+    position: absolute;
+    top: 20px;
+    object-fit: cover;
+    object-position: center;
+    width: 24%;
+    aspect-ratio: 1 / 1;
+}
+
+.banner h1 {
+    position: absolute;
+    font-family: BBH Bartle;
+    color: rgba(152, 236, 161, 1);
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 60px;
+    z-index: 0;
+    left: 32%;
+    top: 5px;
+}
+
+.banner h2 {
+    position: absolute;
+    font-family: "Cedarville Cursive", cursive ;
+    color: rgba(152, 236, 161, 1);
+    font-weight: 200px;
+    z-index: 1;
+    bottom: -35px;
+    left: 34% ;
+    font-size: 100px;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#perfil {
+    position: relative;
+    display: block;
+    width: 24%;
+    border-radius: 15px;
+    height: 50%;
+    margin: auto;
+    border: solid 5px;
+    border-color: rgba(145, 177, 250, 1);
+}
+
+/* SOBRE */
+
+.blocoSobre {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(34, 117, 192, 1);
+    border-radius: 15px;
+    margin: 5% 10% 0;
+    padding: 5%;
+}
+
+.blocoSobre img {
+    height: 100px;
+    width: 100px;
+}
+
+.sobrePara {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 30%;
+    color: white;
+
+}
+
+.blocosStack {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(152, 236, 161, 1);
+    margin: 0 10% 5% 50% ;
+}
+
+#caixaStack {
+    padding: 5%;
+    height: 100px;
+    margin-right: 5%;
+}
+
+/* CORPO */
+
+.divisoria {
+    display: flex;
+    flex-direction: row;
+    background-color: #2275C0;
+    margin-left: 10%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 5%;
+    margin-top: 6%;
+}
+
+.divisoria h1 {
+    font-family: BBH Bartle;
+    color: white;
+}
+
+.divisoria-template2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #2275C0;
+    margin-right: 10%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 40%;
+    text-align: right;
+    margin-top: 5%;
+}
+
+.divisoria-template2 h1 {
+    font-family: BBH Bartle;
+    color: white;
+}
+
+.blocoMarcos {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(152, 236, 161, 1) ;
+    border-radius: 30px;
+    margin: 3% 10%;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.blocoMarcos p {
+    margin-left: 30%;
+    justify-content: right;
+    font-family: BBH bartle;
+}
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    background-color: #2275C0;
+    border-radius: 30px;
+    margin: 3% 10%;
+    padding: 2%;
+}
+
+.formacao div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formacao div h1 {
+    font-family: BBH bartle;
+    color: rgba(152, 236, 161, 1);
+    font-size: larger;
+}
+
+.formacao h2 {
+    color: rgba(152, 236, 161, 1);
+    font-size: medium;
+}
+
+.formacao p {
+    margin-top: 2%;
+    color: white;
+}
+
+.blocoProjetos {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10% 5%;
+    justify-content: space-between;
+}
+
+.caixaProjeto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #025DAE;
+    margin-right: 2%;
+    border-radius: 30px;
+    padding: 3%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
+}
+
+.caixaProjeto h2 {
+    color: rgba(152, 236, 161, 1) ;
+    font-size: medium;
+}
+
+.caixaProjeto h1 {
+    color: rgba(152, 236, 161, 1) ;
+    font-family: BBH bartle;
+    font-size: medium;
+    margin-bottom: 8%;
+}
+
+.caixaProjeto p {
+    color: white ;
+}
+
+
+.blocoExtras {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10% 5%;
+    justify-content: space-between;
+}
+
+.caixaExtra {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #025DAE;
+    margin-right: 2%;
+    border-radius: 30px;
+    padding: 3%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    min-width: 30%;
+}
+
+.caixaExtra h2 {
+    color: rgba(152, 236, 161, 1) ;
+    font-size: medium;
+}
+
+.caixaExtra h1 {
+    color: rgba(152, 236, 161, 1) ;
+    font-family: BBH bartle;
+    font-size: medium;
+}
+
+.caixaExtra p {
+    color: white ;
+}
+
+.blocoContatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #025DAE;
+    margin: 1% 10%;
+    border-radius: 30px;
+    padding: 1%;
+    text-align: center;
+
+}
+
+.caixaContato {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixaContato h1 {
+    color: white;
+    font-family:  BBH bartle;
+    font-size: large;
+}
+
+.caixaContato p {
+    color: white;
+}
+
+
+/* TELA PROJETOS */
+
+.projeto-template1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #025DAE;
+    border-radius: 30px;
+    padding: 2%;
+    margin: 5% 10%;
+    text-align: left;
+}
+
+.projeto-template1 h1 {
+    color: rgba(152, 236, 161, 1) ;
+    font-family: BBH bartle;
+    font-size: large;
+    margin-bottom: 3%;
+}
+
+.projeto-template1 h2 {
+    color: rgba(152, 236, 161, 1) ;
+    font-size: medium;
+}
+
+.projeto-template1 p, ul, li {
+    color: white;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #025DAE;
+    text-align: center;
+    padding: 5%;
+    margin-top: 10%;
+}
+
+footer h1 {
+    color: rgba(152, 236, 161, 1) ;
+    font-family: BBH bartle;
+}
