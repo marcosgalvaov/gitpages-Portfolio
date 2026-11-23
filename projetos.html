@@ -25,16 +25,18 @@
         <h1>marcos gui</h1>
 
         <div class="dropdown">
-            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="">Home</a></li>
-                <li><a class="dropdown-item" href="">Produtos</a></li>
+            <button type="button" class="btnPasta" id="btnMenu" aria-label="Abrir menu" aria-haspopup="true" aria-expanded="false" aria-controls="menuSecoes">
+                <img src="img copy/mapa.webp" alt="">
+            </button>
+            <ul class="dropdown-menu" id="menuSecoes">
+                <li><a class="dropdown-item" href="#fatec">Fatec</a></li>
+                <li><a class="dropdown-item" href="#etec">Etec</a></li>
+                <li><a class="dropdown-item" href="#voluntariado">Voluntariado</a></li>
             </ul>
-
         </div>
     </header>
     
-    <div class="divisoria-template2">
+    <div class="divisoria-template2" id="fatec">
         <h1>PROJETOS FATEC</h1>
         <img>
     </div>
@@ -59,18 +61,43 @@
             <a href="https://github.com/marcosgalvaov/welcome.code">✸ Repositório GitHub ✸</a>
         </div>
         <figure>
-            <img src="img/templatemudar.png">
-            <img src="img/templatemudar.png">
+            <img src="img copy/templatemudar.png">
+            <img src="img copy/templatemudar.png">
+        </figure>
+    </article>
+
+    <article class="projeto-lista">
+        <div class="projeto-template1">
+            <h2>API 2026.1 ✸</h2>
+            <h1>HEALTHY BOT</h1>
+            <p>► Desafio técnico:</p>
+            <p>Desenvolver assistente virtual via Telegram que busca auxiliar indivíduos que desejam acessar, de forma rápida, informações sobre o calendário de vacinação pessoal, postos de saúde mais próximos, vacinas para grupos especiais e atendimento domiciliar.</p>
+            <p></p>
+            <p>► Projeto realizado em grupo durante 3 sprints, do qual pude atuar como desenvolvedor:
+            <li> 
+                <ul>- Realizei conexões entre o código e o Telegram, para intreração com o usuário;</ul>
+                <ul>- Fiz pesquisas para melhorar sistemas e buscar alternativas em códigos e lógicas;</ul>
+                <ul>- Realizei testes para encontrar e corrigir erros no Bot;</ul>
+            </li>
+            <p>► Hard skills: Linguagem Python, Bibliotecas, API de geolocalização, Versionamento com Git e GitHub, Acompanhamento das tarefas com Jira </p>
+            <p>► Soft skills: Trabalho em equipe, comunicação eficiente, aprendizado autodidático</p>
+            <p></p>
+            <p style="font-weight: bold;">► Tecnologias: Python, Telegram, Scraping de dados, API de geolocalização, Git/GitHub, Jira.</p>
+            <a href="https://github.com/marcosgalvaov/welcome.code">✸ Repositório GitHub ✸</a>
+        </div>
+        <figure>
+            <img src="img copy/templatemudar.png">
+            <img src="img copy/templatemudar.png">
         </figure>
     </article>
 
 
-    <div class="divisoria-template2">
+    <div class="divisoria-template2" id="etec">
         <h1>PROJETOS ETEC</h1>
         <img>
     </div>
 
-    <div class="divisoria-template2">
+    <div class="divisoria-template2" id="voluntariado">
         <h1>VOLUNTARIADO</h1>
         <img>
     </div>
@@ -80,5 +107,7 @@
     </footer>
 
 </main>
+
+<script src="script.js"></script>
 </body>
 </html>

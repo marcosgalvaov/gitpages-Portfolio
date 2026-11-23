@@ -30,36 +30,100 @@ body {
 
 /* HEADER */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .cabecalho {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: rgba(34, 117, 192, 1);
-    margin: 1% 20%;
-    padding: 0.5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2275C0;
+    margin: 1.5% 13%;
+    padding: 1% 3%;
     border-radius: 30px;
+    border: solid rgba(152, 236, 161, 1);
+    
 }
 
 .cabecalho h1 {
     font-family: BBH Bartle;
     color: rgba(152, 236, 161, 1);
+    font-size: clamp(1.1rem, 2.4vw, 1.9rem);
+    margin: 0;
 }
 
 .dropdown {
-    margin-right: 5%;
+    position: relative;
+    margin-right: 0;
 }
 
-.dropdown button {
-    background-color: rgba(34, 117, 192, 1);
-    border-color: white;
+.btnPasta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(60px, 7vw, 84px);
+    height: 36px;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background-color: rgba(152, 236, 161, 1);
+    cursor: pointer;
+    transition: transform 0.15s;
 }
 
-.dropdown button:hover {
-    background-color: #4f285b;
+.btnPasta img {
+    height: 46px;
+    width: auto;
+    margin-top: -12px;
+    filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.25));
+    pointer-events: none;
 }
 
-ul a:hover {
-    background-color: #b983c8;
+.btnPasta:hover,
+.btnPasta:focus-visible {
+    transform: translateY(-2px);
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 14px);
+    right: 0;
+    left: auto;
+    z-index: 1;
+    min-width: 13rem;
+    margin: 0;
+    padding: 8px;
+    list-style: none;
+    background-color: #2275C0;
+    border: 3px solid rgba(152, 236, 161, 1);
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 3px 4px 8px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-family: BBH Bartle;
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus-visible {
+    background-color: rgba(152, 236, 161, 1);
+    color: #0b3a6b;
 }
 
 
@@ -68,48 +132,16 @@ ul a:hover {
 .banner {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
-    margin-bottom: 0;
     background-image: linear-gradient(to bottom, #025DAE, #4E8AD7, #9BB7FF);
     border: solid 5px;
     border-color: #9BB7FF;
     border-radius: 30px;
-    margin: 1% 8%;
-    padding: 2%;
+    margin: 1.5% 6.5%;
+    padding: 1% 2% 3%;
     text-align: center;
-
-}
-
-.banner img {
-    position: absolute;
-    top: 20px;
-    object-fit: cover;
-    object-position: center;
-    width: 24%;
-    aspect-ratio: 1 / 1;
-}
-
-.banner h1 {
-    position: absolute;
-    font-family: BBH Bartle;
-    color: rgba(152, 236, 161, 1);
-    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    font-size: 60px;
-    z-index: 0;
-    left: 32%;
-    top: 5px;
-}
-
-.banner h2 {
-    position: absolute;
-    font-family: "Cedarville Cursive", cursive ;
-    color: rgba(152, 236, 161, 1);
-    font-weight: 200px;
-    z-index: 1;
-    bottom: -35px;
-    left: 34% ;
-    font-size: 100px;
-    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    overflow: visible;
 }
 
 #perfil {
@@ -128,37 +160,90 @@ ul a:hover {
 .blocoSobre {
     display: flex;
     flex-direction: row;
-    background-color: rgba(34, 117, 192, 1);
-    border-radius: 15px;
+    border: 3px solid #6b8de1;
+    background-image: linear-gradient(to bottom, #025DAE, #4E8AD7, #6b8de1);
+    border-radius: 30px;
     margin: 5% 10% 0;
-    padding: 5%;
+    padding: 3%;
+    align-items: center;
 }
 
 .blocoSobre img {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 600px;
+    border-radius: 30px;
+    border: 3px solid #6b8de1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.blocoSobre h1 {
+    color: rgba(152, 236, 161, 1);
+    font-weight: bold;
 }
 
 .sobrePara {
     display: flex;
     flex-direction: column;
     justify-content: right;
-    margin-left: 30%;
+    margin-left: 5%;
     color: white;
 
 }
 
-.blocosStack {
-    display: flex;
-    flex-direction: row;
+.Stack {
     background-color: rgba(152, 236, 161, 1);
-    margin: 0 10% 5% 50% ;
+    font-family: BBH battle;
+    padding: 1% 10%;
+    margin-top: 2%;
 }
 
+
 #caixaStack {
-    padding: 5%;
-    height: 100px;
-    margin-right: 5%;
+    padding: 3% 4% 4%;
+    background-color: rgba(152, 236, 161, 1);
+    border-radius: 30px;
+    text-align: center;
+}
+
+#caixaStack h1 {
+    font-family: BBH Bartle;
+    color: #2275C0;
+    font-size: clamp(1.2rem, 2.4vw, 2rem);
+    margin: 0 0 3%;
+}
+
+.listaStack {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: clamp(14px, 2vw, 28px) 10px;
+    list-style: none;
+    margin-left: 5%;
+    padding: 0;
+}
+
+.listaStack img:hover {
+    transform: scale(1.2);
+}
+
+.listaStack li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.listaStack img {
+    width: clamp(36px, 4.5vw, 64px);
+    height: clamp(36px, 4.5vw, 64px);
+    object-fit: contain;
+    transition: transform 0.1s linear;
+}
+
+.listaStack span {
+    font-size: clamp(0.7rem, 1.1vw, 0.9rem);
+    font-weight: 700;
+    color: #2275C0;
+    font-family: Alata;
 }
 
 /* CORPO */
@@ -208,18 +293,25 @@ ul a:hover {
     margin: 3% 10%;
     justify-content: space-around;
     padding: 1%;
+    align-content: center;
+    align-items: center;
+    border: solid #025DAE;
 }
 
 .blocoMarcos p {
-    margin-left: 30%;
     justify-content: right;
-    font-family: BBH bartle;
+    font-family: alata;
+    font-weight: bold;
+    font-size: larger;
+    align-content: center;
+    align-items: center;
+    margin-top: 1%;
 }
 
 .formacao {
     display: flex;
     flex-direction: column;
-    background-color: #2275C0;
+    background-color: #025DAE;
     border-radius: 30px;
     margin: 3% 10%;
     padding: 2%;
@@ -409,7 +501,7 @@ ul a:hover {
 /* FOOTER */
 
 footer {
-    background-color: #025DAE;
+    background-color: #2275C0;
     text-align: center;
     padding: 5%;
     margin-top: 10%;
@@ -419,3 +511,124 @@ footer h1 {
     color: rgba(152, 236, 161, 1) ;
     font-family: BBH bartle;
 }
+
+
+@media (max-width: 900px) {
+    .cabecalho {
+        margin: 3% 3%;
+        padding: 1% 4%;
+    }
+
+    .blocoSobre {
+        flex-direction: column;
+        margin: 14% 4% 0;
+        padding: 6% 6% 8%;
+    }
+
+    .blocoSobre img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .sobrePara {
+        font-size: 0.9rem;
+        text-align: left;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .Stack {
+        margin: 3% 4% 6%;
+        flex-direction: column;
+    }
+
+    #caixaStack {
+        padding: 6% 5%;
+    }
+
+    .listaStack {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px 8px;
+    }
+
+    .listaStack img {
+        max-width: 56px;
+        height: 56px;
+    }
+
+    .listaStack span {
+        font-size: 0.8rem;
+    }
+
+    .divisoria {
+        margin-left: 3%;
+        padding: 3% 5% 3% 5%;
+        margin-top: 10%;
+    }
+
+    .blocoMarcos {
+        margin: 5% 4%;
+        padding: 4% 5% 4% 5%;
+        
+    }
+
+    .blocoMarcos p {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .formacao {
+        margin: 5% 4%;
+        padding: 5%;
+    }
+
+    .formacao div {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .formacao p {
+        font-size: 0.85rem;
+    }
+
+    .blocoProjetos, .blocoExtras {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .caixaProjeto,
+    .caixaExtra {
+        padding: 6%;
+        margin-top: 5%;
+    }
+
+    .caixaProjeto h1 {
+        font-size: 1.1rem;
+    }
+
+    .caixaProjeto h2,
+    .caixaProjeto p,
+    .caixaExtra p {
+        font-size: 0.95rem;
+    }
+
+    .blocoContatos {
+        flex-direction: column;
+        margin: 4%;
+        padding: 6%;
+        gap: 16px;
+    }
+
+    .caixaContato h1 {
+        font-size: 1rem;
+    }
+
+    .caixaContato p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        margin-top: 15%;
+    }
+}
+
