@@ -281,6 +281,12 @@ ul a:hover {
     color: white ;
 }
 
+.caixaProjeto img {
+    height: 180px;
+    width: 700px;
+    border-radius: 15px;
+    margin-top: 5% ;
+}
 
 .blocoExtras {
     display: flex;
@@ -316,6 +322,13 @@ ul a:hover {
     color: white ;
 }
 
+.caixaExtra img {
+    height: 180px;
+    width: 700px;
+    border-radius: 15px;
+    margin-top: 5% ;
+}
+
 .blocoContatos {
     display: flex;
     flex-direction: row;
@@ -349,10 +362,6 @@ ul a:hover {
 .projeto-template1 {
     display: flex;
     flex-direction: column;
-    background-color: #025DAE;
-    border-radius: 30px;
-    padding: 2%;
-    margin: 5% 10%;
     text-align: left;
 }
 
@@ -370,9 +379,29 @@ ul a:hover {
 
 .projeto-template1 p, ul, li {
     color: white;
+    max-width: 90%;
 }
 
+.projeto-template1 a {
+    color: rgba(152, 236, 161, 1);
+    font-weight: bold;
+}
 
+.projeto-lista {
+    display: flex;
+    flex-direction: row;
+    background-color: #025DAE;
+    border-radius: 30px;
+    padding: 3%;
+    margin: 5% 10%;
+}
+
+.projeto-lista img {
+    height: 200px;
+    width: 800px;
+    margin-top: 8%;
+    border-radius: 15px;
+}
 
 
 
