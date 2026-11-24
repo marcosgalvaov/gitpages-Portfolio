@@ -398,11 +398,12 @@ header {
 }
 
 .caixaProjeto img {
-    height: auto;
     width: 100%;
-    max-width: 800px;
-    margin-top: 8%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 15px;
+    border: solid rgba(152, 236, 161, 1) ;
 }
 
 .blocoExtras {
@@ -440,11 +441,12 @@ header {
 }
 
 .caixaExtra img {
-    height: auto;
     width: 100%;
-    max-width: 800px;
-    margin-top: 8%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 15px;
+    border: solid rgba(152, 236, 161, 1) ;
 }
 
 .blocoContatos {
@@ -470,8 +472,8 @@ header {
     font-size: large;
 }
 
-.caixaContato p {
-    color: white;
+.caixaContato a {
+    color: rgba(152, 236, 161, 1);
 }
 
 
@@ -520,14 +522,19 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 2%;
 }
 
 .projeto-lista img {
-    height: auto;
-    width: 48%;
-    max-width: 800px;
-    margin-top: 8%;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 15px;
+    border: solid rgba(152, 236, 161, 1) ;
+    margin-top: 3%;
+    margin-right: 2%;
+
 }
 
 
